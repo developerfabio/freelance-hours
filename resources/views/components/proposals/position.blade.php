@@ -1,4 +1,4 @@
-@props(['position'])
+@props(['position', 'status'])
 
 
 <div
@@ -7,9 +7,7 @@
         "bg-[#FEF3C7] text-[#F59E0B]" => $position == 0,
         "bg-[#F1F5F9] text-[#94A3B8]" => $position == 1,
         "bg-[#FFEDD5] text-[#B45309]" => $position == 2,
-        "bg-[#C0F7B4]" => $position == 3,
-        "bg-[#FECDD3]" => $position == 4,
-        "bg-[#F1F5F9]" => $position > 4,
+        "bg-[#F1F5F9]" => $position > 2,
 
     ])>
     @if($position < 3)
